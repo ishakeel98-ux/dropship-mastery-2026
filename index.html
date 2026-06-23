@@ -1,1 +1,2477 @@
-Hello World editedXY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="DropShip Mastery 2026 — The world's most complete dropshipping academy. Master Shopify, Amazon, TikTok Shop with 251 video lessons. Zero to $10K/month. 47K+ students enrolled.">
+<meta name="keywords" content="dropshipping course 2026, Shopify dropshipping, Amazon FBA, TikTok Shop, e-commerce, online business, passive income">
+<meta name="robots" content="index, follow">
+<meta name="author" content="DropShip Mastery">
+<meta property="og:title" content="DropShip Mastery 2026 — Zero to $10K/Month">
+<meta property="og:description" content="Master Shopify, Amazon & TikTok Shop dropshipping with 251 animated video lessons. Start for $9.99. 47K+ students.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ishakeel98-ux.github.io/dropship-mastery-2026/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DropShip Mastery 2026 — Zero to $10K/Month">
+<meta name="twitter:description" content="Zero to $10K/Month Dropshipping Academy — 47K+ Students Enrolled">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<link rel="canonical" href="https://ishakeel98-ux.github.io/dropship-mastery-2026/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DropShip Mastery 2026 — Zero to $10K/Month</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #050508;
+    --deep: #0a0a12;
+    --panel: #0f0f1a;
+    --border: #1a1a2e;
+    --accent: #6c5ce7;
+    --neon: #00d4aa;
+    --gold: #ffd32a;
+    --fire: #ff6b35;
+    --text: #e8e8f0;
+    --muted: #7070a0;
+    --white: #ffffff;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--void);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── GRID NOISE BACKGROUND ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(108,92,231,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(108,92,231,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(5,5,8,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5%;
+  }
+
+  .nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--neon));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+  }
+
+  .logo span { color: var(--gold); -webkit-text-fill-color: var(--gold); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    letter-spacing: 0.3px;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    background: var(--accent);
+    color: var(--white) !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600 !important;
+    transition: opacity 0.2s !important;
+  }
+
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 5% 80px;
+    overflow: hidden;
+  }
+
+  /* Animated orbs */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: drift 12s ease-in-out infinite;
+  }
+
+  .orb-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; right: -100px; animation-delay: 0s; }
+  .orb-2 { width: 400px; height: 400px; background: var(--neon); bottom: -100px; left: -100px; animation-delay: -4s; }
+  .orb-3 { width: 300px; height: 300px; background: var(--gold); top: 50%; left: 40%; animation-delay: -8s; }
+
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -20px) scale(1.05); }
+    66% { transform: translate(-20px, 30px) scale(0.95); }
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0,212,170,0.1);
+    border: 1px solid rgba(0,212,170,0.3);
+    color: var(--neon);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.375rem 0.875rem;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-mono);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--neon);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 .grad {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--neon) 50%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-sub {
+    font-size: 1.125rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 30px rgba(108,92,231,0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 50px rgba(108,92,231,0.6); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-secondary:hover { border-color: var(--accent); background: rgba(108,92,231,0.08); }
+
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .stat-item { text-align: left; }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--neon), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .stat-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* ── 3D DASHBOARD MOCKUP ── */
+  .hero-visual {
+    position: relative;
+    perspective: 1200px;
+  }
+
+  .dashboard-3d {
+    position: relative;
+    transform: rotateY(-15deg) rotateX(5deg);
+    transform-style: preserve-3d;
+    animation: float3d 8s ease-in-out infinite;
+  }
+
+  @keyframes float3d {
+    0%, 100% { transform: rotateY(-15deg) rotateX(5deg) translateY(0); }
+    50% { transform: rotateY(-12deg) rotateX(3deg) translateY(-15px); }
+  }
+
+  .dash-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(108,92,231,0.1);
+  }
+
+  .dash-header {
+    background: var(--deep);
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-r { background: #ff5f57; }
+  .dot-y { background: #febc2e; }
+  .dot-g { background: #28c840; }
+
+  .dash-title { font-size: 0.8rem; color: var(--muted); font-family: var(--font-mono); margin-left: 0.5rem; }
+
+  .dash-body { padding: 1.5rem; }
+
+  .shopify-banner {
+    background: linear-gradient(135deg, #96bf48, #5e8e3e);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .shopify-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
+  .shopify-amount { font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; color: white; }
+  .shopify-sub { font-size: 0.7rem; opacity: 0.8; }
+  .shopify-icon { font-size: 2.5rem; opacity: 0.8; }
+
+  .metrics-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .metric-box {
+    background: var(--deep);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem;
+  }
+
+  .metric-label { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem; }
+  .metric-val { font-family: var(--font-mono); font-size: 1rem; font-weight: 600; color: var(--neon); }
+  .metric-chg { font-size: 0.65rem; color: #28c840; }
+
+  .orders-list { }
+  .order-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .order-row:last-child { border-bottom: none; }
+
+  .order-product { font-size: 0.75rem; color: var(--text); }
+  .order-source { font-size: 0.65rem; color: var(--muted); font-family: var(--font-mono); }
+  .order-profit { font-size: 0.8rem; font-weight: 700; color: var(--neon); }
+
+  /* Floating cards */
+  .floating-card {
+    position: absolute;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.875rem 1rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    animation: floatCard 6s ease-in-out infinite;
+  }
+
+  .float-1 {
+    top: -30px;
+    right: -40px;
+    animation-delay: -2s;
+    min-width: 150px;
+  }
+
+  .float-2 {
+    bottom: 20px;
+    left: -50px;
+    animation-delay: -4s;
+    min-width: 160px;
+  }
+
+  @keyframes floatCard {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+  }
+
+  .fc-label { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem; }
+  .fc-val { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: var(--gold); }
+  .fc-chg { font-size: 0.7rem; color: #28c840; }
+
+  /* ── SECTION BASE ── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 5%;
+  }
+
+  .section-inner { max-width: 1400px; margin: 0 auto; }
+
+  .section-tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-sub {
+    font-size: 1.0625rem;
+    color: var(--muted);
+    max-width: 640px;
+    line-height: 1.7;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ── WHAT IS DROPSHIPPING ── */
+  .explainer {
+    background: var(--deep);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .explainer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  /* 3D Flow Diagram */
+  .flow-diagram {
+    position: relative;
+    height: 400px;
+  }
+
+  .flow-node {
+    position: absolute;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    min-width: 140px;
+    text-align: center;
+    animation: floatNode 5s ease-in-out infinite;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  }
+
+  .flow-node:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); animation-delay: 0s; border-color: rgba(255,211,42,0.3); }
+  .flow-node:nth-child(2) { top: 50%; left: 0; transform: translateY(-50%); animation-delay: -1.5s; border-color: rgba(108,92,231,0.4); }
+  .flow-node:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); animation-delay: -3s; border-color: rgba(0,212,170,0.4); }
+  .flow-node:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); animation-delay: -4.5s; border-color: rgba(255,107,53,0.4); }
+
+  @keyframes floatNode {
+    0%, 100% { box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+    50% { box-shadow: 0 25px 60px rgba(108,92,231,0.2); }
+  }
+
+  .node-icon { font-size: 2rem; margin-bottom: 0.4rem; }
+  .node-label { font-size: 0.8rem; font-weight: 700; color: var(--text); }
+  .node-sub { font-size: 0.65rem; color: var(--muted); }
+
+  /* SVG connector lines */
+  .flow-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .flow-path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    stroke-dasharray: 6 4;
+    stroke-dashoffset: 0;
+    opacity: 0.4;
+    animation: dashMove 3s linear infinite;
+  }
+
+  @keyframes dashMove {
+    to { stroke-dashoffset: -20; }
+  }
+
+  .explainer-points { list-style: none; }
+
+  .explainer-points li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .ep-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .ep-title { font-weight: 700; margin-bottom: 0.25rem; font-size: 0.95rem; }
+  .ep-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── COURSES ── */
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .course-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+
+  .course-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 60px rgba(108,92,231,0.2);
+  }
+
+  .course-card.featured {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), 0 20px 60px rgba(108,92,231,0.25);
+  }
+
+  .course-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gold);
+    color: var(--void);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+  }
+
+  /* Animated video thumbnail */
+  .course-thumb {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumb-bg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumb-anim {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Course thumb animations */
+  .thumb-1 { background: linear-gradient(135deg, #0a0a1a, #1a0a2e); }
+  .thumb-2 { background: linear-gradient(135deg, #0a1a12, #0a2e1a); }
+  .thumb-3 { background: linear-gradient(135deg, #1a0a0a, #2e1a0a); }
+  .thumb-4 { background: linear-gradient(135deg, #0a0a1a, #0a1a2e); }
+  .thumb-5 { background: linear-gradient(135deg, #1a1a0a, #2e2a0a); }
+  .thumb-6 { background: linear-gradient(135deg, #0a1a1a, #0a2e2a); }
+
+  .thumb-icon-wrap {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .thumb-icon { font-size: 3.5rem; display: block; animation: iconPulse 3s ease-in-out infinite; }
+
+  @keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .thumb-rings {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid;
+    animation: ringExpand 3s ease-out infinite;
+    opacity: 0;
+  }
+
+  .ring:nth-child(2) { animation-delay: 1s; }
+  .ring:nth-child(3) { animation-delay: 2s; }
+
+  @keyframes ringExpand {
+    0% { width: 60px; height: 60px; opacity: 0.6; }
+    100% { width: 200px; height: 200px; opacity: 0; }
+  }
+
+  .play-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index: 3;
+  }
+
+  .play-btn:hover { background: var(--accent); }
+
+  .course-body { padding: 1.5rem; }
+
+  .course-level {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--neon);
+    margin-bottom: 0.5rem;
+  }
+
+  .course-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3; }
+  .course-desc { font-size: 0.825rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.25rem; }
+
+  .course-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-item { font-size: 0.725rem; color: var(--muted); display: flex; align-items: center; gap: 0.3rem; }
+  .meta-item span:first-child { font-size: 0.85rem; }
+
+  .course-modules { margin-bottom: 1.5rem; }
+  .module-item { font-size: 0.775rem; color: var(--muted); padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); display: flex; align-items: center; gap: 0.5rem; }
+  .module-item::before { content: '▸'; color: var(--accent); }
+
+  .course-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-block { }
+  .price-orig { font-size: 0.8rem; color: var(--muted); text-decoration: line-through; }
+  .price-now { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--gold); }
+  .price-tag { font-size: 0.7rem; color: var(--neon); }
+
+  .enroll-btn {
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .enroll-btn:hover { opacity: 0.85; transform: scale(1.03); }
+
+  /* ── PLATFORMS (Shopify/Amazon/TikTok) ── */
+  .platforms {
+    background: var(--deep);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .platform-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .platform-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+  .platform-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .pl-shopify { background: linear-gradient(135deg, #96bf48, #5e8e3e); }
+  .pl-amazon { background: linear-gradient(135deg, #ff9900, #e47911); }
+  .pl-tiktok { background: linear-gradient(135deg, #010101, #ff0050); }
+  .pl-etsy { background: linear-gradient(135deg, #f1641e, #d45d16); }
+  .pl-walmart { background: linear-gradient(135deg, #0071ce, #004f99); }
+  .pl-ebay { background: linear-gradient(135deg, #e53238, #0064d2); }
+
+  .platform-name { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; }
+  .platform-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.5rem; }
+
+  /* Shopify mock screenshot */
+  .shopify-mock {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    margin-bottom: 1.25rem;
+  }
+
+  .sm-bar {
+    background: #1a1a1a;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .sm-dot { width: 8px; height: 8px; border-radius: 50%; background: #555; }
+
+  .sm-body { padding: 0.75rem; background: #f6f6f7; }
+
+  .sm-header-row {
+    background: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sm-store-name { font-size: 0.65rem; font-weight: 700; color: #333; }
+  .sm-nav-dots { display: flex; gap: 0.3rem; }
+  .sm-nav-dot { width: 4px; height: 4px; border-radius: 50%; background: #ccc; }
+
+  .sm-stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-bottom: 0.5rem; }
+
+  .sm-stat {
+    background: white;
+    border-radius: 6px;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+  }
+
+  .sm-stat-n { font-size: 0.7rem; font-weight: 800; color: #333; }
+  .sm-stat-l { font-size: 0.55rem; color: #888; }
+
+  .sm-order-list { }
+
+  .sm-order {
+    background: white;
+    border-radius: 5px;
+    padding: 0.35rem 0.5rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sm-order-name { font-size: 0.6rem; color: #333; font-weight: 500; }
+  .sm-order-price { font-size: 0.6rem; font-weight: 700; color: #5e8e3e; }
+
+  .platform-features { list-style: none; }
+  .platform-features li { font-size: 0.8rem; color: var(--muted); padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; }
+  .platform-features li::before { content: '✓'; color: var(--neon); font-weight: 700; }
+
+  /* ── HOW TO START ── */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    z-index: 0;
+  }
+
+  .step-card {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .step-num {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0 auto 1rem;
+    position: relative;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    cursor: default;
+  }
+
+  .step-card:hover .step-num {
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(108,92,231,0.3);
+  }
+
+  .step-icon { font-size: 2rem; }
+
+  .step-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .step-desc { font-size: 0.775rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── PRODUCT RESEARCH ── */
+  .research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .product-card-stack { position: relative; height: 450px; }
+
+  .product-card {
+    position: absolute;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    width: 90%;
+    transition: all 0.3s;
+  }
+
+  .product-card:nth-child(1) { top: 0; left: 10%; box-shadow: 0 20px 50px rgba(0,0,0,0.5); z-index: 3; }
+  .product-card:nth-child(2) { top: 30px; left: 5%; opacity: 0.7; z-index: 2; box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+  .product-card:nth-child(3) { top: 60px; left: 0; opacity: 0.4; z-index: 1; }
+
+  .pc-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+  .pc-title { font-weight: 700; font-size: 0.9rem; }
+  .pc-badge { font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(0,212,170,0.15); color: var(--neon); border: 1px solid rgba(0,212,170,0.3); }
+
+  .pc-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+  .pcm { text-align: center; }
+  .pcm-val { font-family: var(--font-mono); font-size: 1rem; font-weight: 600; color: var(--neon); }
+  .pcm-label { font-size: 0.65rem; color: var(--muted); }
+
+  .trend-chart {
+    height: 60px;
+    background: var(--deep);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .trend-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .pc-suppliers { }
+  .supplier-row { display: flex; align-items: center; justify-content: space-between; padding: 0.4rem 0; font-size: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .supplier-name { color: var(--text); }
+  .supplier-price { color: var(--neon); font-weight: 600; font-family: var(--font-mono); }
+  .supplier-ship { color: var(--muted); font-size: 0.65rem; }
+
+  /* Research tools */
+  .tool-list { }
+  .tool-item {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: border-color 0.2s;
+  }
+
+  .tool-item:hover { border-color: var(--accent); }
+  .tool-emoji { font-size: 1.5rem; }
+  .tool-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.2rem; }
+  .tool-use { font-size: 0.775rem; color: var(--muted); }
+  .tool-tag { margin-left: auto; font-size: 0.65rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; }
+  .tag-free { background: rgba(0,212,170,0.1); color: var(--neon); border: 1px solid rgba(0,212,170,0.3); }
+  .tag-paid { background: rgba(108,92,231,0.1); color: var(--accent); border: 1px solid rgba(108,92,231,0.3); }
+
+  /* ── EARNINGS CALCULATOR ── */
+  .calc-section {
+    background: var(--deep);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .calc-box {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  .calc-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
+
+  .calc-row { margin-bottom: 1.25rem; }
+  .calc-label { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; display: flex; justify-content: space-between; }
+  .calc-val { font-family: var(--font-mono); font-size: 0.9rem; font-weight: 600; color: var(--neon); }
+
+  .calc-slider {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border);
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    accent-color: var(--accent);
+  }
+
+  .calc-result {
+    background: var(--deep);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .result-label { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .result-amount { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--gold), var(--fire)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .result-period { font-size: 0.8rem; color: var(--muted); }
+
+  .calc-insights { }
+  .insight-item { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
+  .ii-icon { font-size: 2rem; }
+  .ii-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; }
+  .ii-desc { font-size: 0.825rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: border-color 0.3s;
+  }
+
+  .testimonial-card:hover { border-color: rgba(108,92,231,0.4); }
+
+  .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 2px; }
+  .testimonial-text { font-size: 0.875rem; color: var(--text); line-height: 1.7; margin-bottom: 1.25rem; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+  }
+
+  .author-name { font-weight: 700; font-size: 0.875rem; }
+  .author-meta { font-size: 0.75rem; color: var(--muted); }
+  .author-earning { font-size: 0.75rem; color: var(--neon); font-weight: 600; }
+
+  /* ── FAQ ── */
+  .faq-list { max-width: 800px; margin: 0 auto; }
+
+  .faq-item {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+
+  .faq-q {
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .faq-arrow { font-size: 0.75rem; color: var(--accent); transition: transform 0.3s; flex-shrink: 0; }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+
+  .faq-a {
+    padding: 0 1.5rem 1.25rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.7;
+    display: none;
+  }
+
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── CTA ── */
+  .cta-section {
+    text-align: center;
+    padding: 120px 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(108,92,231,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+
+  .cta-price-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-orig { font-size: 1.5rem; color: var(--muted); text-decoration: line-through; }
+  .cta-now { font-family: var(--font-display); font-size: 3rem; font-weight: 800; color: var(--gold); }
+  .cta-tag { text-align: left; }
+  .cta-save { font-size: 0.8rem; color: var(--fire); font-weight: 700; }
+  .cta-access { font-size: 0.75rem; color: var(--muted); }
+
+  .cta-guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 1rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--deep);
+    border-top: 1px solid var(--border);
+    padding: 60px 5% 40px;
+  }
+
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--neon)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
+  .footer-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; }
+
+  .footer-social { display: flex; gap: 0.75rem; }
+  .social-btn { width: 36px; height: 36px; border-radius: 8px; background: var(--panel); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; cursor: pointer; transition: border-color 0.2s; text-decoration: none; }
+  .social-btn:hover { border-color: var(--accent); }
+
+  .footer-col-title { font-weight: 700; font-size: 0.875rem; margin-bottom: 1rem; }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 0.6rem; }
+  .footer-links a { font-size: 0.825rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  .footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+  .footer-copy { font-size: 0.775rem; color: var(--muted); }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { font-size: 0.775rem; color: var(--muted); text-decoration: none; }
+  .footer-legal a:hover { color: var(--text); }
+
+  /* ── TICKER ── */
+  .ticker-wrap {
+    background: var(--accent);
+    overflow: hidden;
+    padding: 0.625rem 0;
+  }
+
+  .ticker {
+    display: flex;
+    animation: ticker 30s linear infinite;
+    white-space: nowrap;
+  }
+
+  .ticker-item {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+    letter-spacing: 0.3px;
+  }
+
+  .ticker-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.5); }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .courses-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .explainer-grid, .research-grid, .calc-grid { grid-template-columns: 1fr; }
+    .platforms-grid, .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .steps-grid::before { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .courses-grid, .platforms-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.2rem; }
+  }
+
+  
+/* Mobile hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.3s;
+}
+.nav-mobile-open .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav-mobile-open .hamburger span:nth-child(2) { opacity: 0; }
+.nav-mobile-open .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+@media (max-width: 900px) {
+  .hamburger { display: flex; }
+  .nav-links.mobile-open {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: rgba(5,5,8,0.98);
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    gap: 1rem;
+    z-index: 998;
+  }
+}
+/* Scroll animations */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <!-- repeated for seamless loop -->
+    <span class="ticker-item">🚀 2026 Updated Course <span class="ticker-dot"></span></span>
+    <span class="ticker-item">✅ Zero Inventory Needed <span class="ticker-dot"></span></span>
+    <span class="ticker-item">💰 Start With $0–$100 <span class="ticker-dot"></span></span>
+    <span class="ticker-item">📦 Shopify + Amazon + TikTok Shop <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🎬 3D & 5D Animation Video Lessons <span class="ticker-dot"></span></span>
+    <span class="ticker-item">⚡ AI-Powered Product Research <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🌍 Sell Globally From Home <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🚀 2026 Updated Course <span class="ticker-dot"></span></span>
+    <span class="ticker-item">✅ Zero Inventory Needed <span class="ticker-dot"></span></span>
+    <span class="ticker-item">💰 Start With $0–$100 <span class="ticker-dot"></span></span>
+    <span class="ticker-item">📦 Shopify + Amazon + TikTok Shop <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🎬 3D & 5D Animation Video Lessons <span class="ticker-dot"></span></span>
+    <span class="ticker-item">⚡ AI-Powered Product Research <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🌍 Sell Globally From Home <span class="ticker-dot"></span></span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">DropShip<span>✦</span>Mastery</div>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="nav-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#calculator">Earn Calculator</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        🔥 2026 Edition — Fully Updated
+      </div>
+
+      <h1>
+        The World's Most<br>
+        <span class="grad">Complete Dropshipping</span><br>
+        Academy
+      </h1>
+
+      <p class="hero-sub">
+        Master Shopify, Amazon, TikTok Shop & AliExpress dropshipping with 3D animated video lessons, real account screenshots, live product examples, and step-by-step AI tools — all in one course, for the price of a coffee.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#enroll" class="btn-primary">🚀 Start for $9.99 Today</a>
+        <a href="#courses" class="btn-secondary">▶ Watch Free Preview</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">47K+</div>
+          <div class="stat-label">Students Enrolled</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$2.3M+</div>
+          <div class="stat-label">Student Revenue</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">98%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D Dashboard -->
+    <div class="hero-visual">
+      <div class="dashboard-3d">
+        <!-- Floating card 1 -->
+        <div class="floating-card float-1">
+          <div class="fc-label">Today's Revenue</div>
+          <div class="fc-val">$1,247</div>
+          <div class="fc-chg">▲ +34% from yesterday</div>
+        </div>
+
+        <!-- Main dashboard -->
+        <div class="dash-card">
+          <div class="dash-header">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <div class="dash-title">shopify-store.myshopify.com — Dashboard</div>
+          </div>
+          <div class="dash-body">
+            <div class="shopify-banner">
+              <div>
+                <div class="shopify-label">Total Sales — June 2026</div>
+                <div class="shopify-amount">$12,847.50</div>
+                <div class="shopify-sub">↑ 156% vs. last month</div>
+              </div>
+              <div class="shopify-icon">🛍️</div>
+            </div>
+
+            <div class="metrics-row">
+              <div class="metric-box">
+                <div class="metric-label">Orders</div>
+                <div class="metric-val">247</div>
+                <div class="metric-chg">▲ +89%</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">AOV</div>
+                <div class="metric-val">$52</div>
+                <div class="metric-chg">▲ +12%</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Margin</div>
+                <div class="metric-val">34%</div>
+                <div class="metric-chg">▲ +4%</div>
+              </div>
+            </div>
+
+            <div class="orders-list">
+              <div class="order-row">
+                <div>
+                  <div class="order-product">RGB LED Desk Lamp</div>
+                  <div class="order-source">via TikTok Ad</div>
+                </div>
+                <div class="order-profit">+$18.40</div>
+              </div>
+              <div class="order-row">
+                <div>
+                  <div class="order-product">Magnetic Phone Mount</div>
+                  <div class="order-source">via Facebook Ad</div>
+                </div>
+                <div class="order-profit">+$14.20</div>
+              </div>
+              <div class="order-row">
+                <div>
+                  <div class="order-product">Portable Blender Pro</div>
+                  <div class="order-source">via Google SEO</div>
+                </div>
+                <div class="order-profit">+$22.80</div>
+              </div>
+              <div class="order-row">
+                <div>
+                  <div class="order-product">Smart Plant Sensor</div>
+                  <div class="order-source">via Instagram Ad</div>
+                </div>
+                <div class="order-profit">+$31.50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card 2 -->
+        <div class="floating-card float-2">
+          <div class="fc-label">Monthly Profit</div>
+          <div class="fc-val">$4,368</div>
+          <div class="fc-chg">▲ Net After All Costs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS DROPSHIPPING -->
+<section class="explainer" id="how-it-works">
+  <div class="section-inner">
+    <div class="explainer-grid">
+      <!-- Flow Diagram -->
+      <div class="flow-diagram">
+        <svg class="flow-svg" viewBox="0 0 400 400">
+          <!-- Customer to You -->
+          <path class="flow-path" d="M200,80 L80,200" style="stroke:var(--gold);"/>
+          <!-- You to Supplier -->
+          <path class="flow-path" d="M200,80 L320,200" style="stroke:var(--accent);"/>
+          <!-- Supplier to Customer -->
+          <path class="flow-path" d="M320,200 Q200,380 80,200" style="stroke:var(--neon);"/>
+        </svg>
+
+        <div class="flow-node">
+          <div class="node-icon">👤</div>
+          <div class="node-label">Your Customer</div>
+          <div class="node-sub">Pays full price</div>
+        </div>
+
+        <div class="flow-node">
+          <div class="node-icon">💻</div>
+          <div class="node-label">Your Store</div>
+          <div class="node-sub">Shopify / Amazon</div>
+        </div>
+
+        <div class="flow-node">
+          <div class="node-icon">🏭</div>
+          <div class="node-label">Supplier</div>
+          <div class="node-sub">AliExpress / CJ</div>
+        </div>
+
+        <div class="flow-node">
+          <div class="node-icon">📦</div>
+          <div class="node-label">Shipped Direct</div>
+          <div class="node-sub">No warehouse needed</div>
+        </div>
+      </div>
+
+      <!-- Explanation Points -->
+      <div>
+        <div class="section-tag">// What Is Dropshipping</div>
+        <h2 class="section-title">Sell products you<br>never touch or store</h2>
+        <p class="section-sub">Dropshipping is the world's most beginner-friendly e-commerce model. You list products, customers buy from you, you order from a supplier, and they ship directly to the buyer. You keep the margin — zero inventory, zero warehouse.</p>
+
+        <ul class="explainer-points">
+          <li>
+            <div class="ep-icon" style="background:rgba(255,211,42,0.1); border:1px solid rgba(255,211,42,0.3);">💰</div>
+            <div>
+              <div class="ep-title">Zero Upfront Inventory Cost</div>
+              <div class="ep-desc">You only pay for products after your customer has already paid you. No risk, no dead stock, no wasted capital.</div>
+            </div>
+          </li>
+          <li>
+            <div class="ep-icon" style="background:rgba(108,92,231,0.1); border:1px solid rgba(108,92,231,0.3);">🌍</div>
+            <div>
+              <div class="ep-title">Run From Anywhere on Earth</div>
+              <div class="ep-desc">Your store operates 24/7. Manage everything from a laptop — sell to customers in the US, UK, Australia, or any market you choose.</div>
+            </div>
+          </li>
+          <li>
+            <div class="ep-icon" style="background:rgba(0,212,170,0.1); border:1px solid rgba(0,212,170,0.3);">⚡</div>
+            <div>
+              <div class="ep-title">Launch in 24–48 Hours</div>
+              <div class="ep-desc">With the right roadmap, your first Shopify store can be live and taking orders within 2 days. We show you every single step with screen recordings.</div>
+            </div>
+          </li>
+          <li>
+            <div class="ep-icon" style="background:rgba(255,107,53,0.1); border:1px solid rgba(255,107,53,0.3);">📈</div>
+            <div>
+              <div class="ep-title">Scale Without Limits</div>
+              <div class="ep-desc">Start at $5/day in ads. Scale winning products to $500/day. Your business grows as fast as you learn — no staff, no office, no constraints.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="section-inner">
+    <div class="section-tag">// Course Library</div>
+    <h2 class="section-title">Start-to-Scale Curriculum</h2>
+    <p class="section-sub">6 complete video courses with 3D/animated lessons, live platform walkthroughs, and real account screenshots. All courses updated for 2026 algorithms and policies.</p>
+
+    <div class="courses-grid">
+
+      <!-- Course 1 -->
+      <div class="course-card fade-up">
+        <div class="course-thumb thumb-1">
+          <div class="thumb-bg thumb-1">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(255,211,42,0.5);"></div>
+              <div class="ring" style="border-color:rgba(255,211,42,0.3);"></div>
+              <div class="ring" style="border-color:rgba(255,211,42,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">🎯</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">MODULE 01</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🟢 Beginner</div>
+          <div class="course-title">Dropshipping Zero to Hero — Complete Foundation</div>
+          <div class="course-desc">Everything you need before earning your first dollar. Business model, mindset, legality, niche selection, and setting up your LLC/sole trader.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 42 Videos</div>
+            <div class="meta-item"><span>⏱</span> 8.5 Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.9/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">How dropshipping ACTUALLY works in 2026</div>
+            <div class="module-item">Choosing your niche — 2026 AI method</div>
+            <div class="module-item">Setting up your legal business entity</div>
+            <div class="module-item">Your first Shopify store (live walkthrough)</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$149</div>
+              <div class="price-now">$9.99</div>
+              <div class="price-tag">✅ Lifetime access</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card featured fade-up">
+        <div class="course-badge">⭐ BESTSELLER</div>
+        <div class="course-thumb thumb-2">
+          <div class="thumb-bg thumb-2">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(150,191,72,0.5);"></div>
+              <div class="ring" style="border-color:rgba(150,191,72,0.3);"></div>
+              <div class="ring" style="border-color:rgba(150,191,72,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">🛍️</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">MODULE 02</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🟡 Intermediate</div>
+          <div class="course-title">Shopify Mastery — Build, List & Sell in 2026</div>
+          <div class="course-desc">The full Shopify playbook — store design, product listing optimization, payment gateways, apps, abandoned cart automation, and your first sale.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 67 Videos</div>
+            <div class="meta-item"><span>⏱</span> 14 Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.95/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">Shopify store setup with REAL screenshots</div>
+            <div class="module-item">Product listing & SEO optimization</div>
+            <div class="module-item">Payment gateways & fraud prevention</div>
+            <div class="module-item">Email automation for abandoned carts</div>
+            <div class="module-item">Shopify apps that 10x conversions</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$199</div>
+              <div class="price-now">$14.99</div>
+              <div class="price-tag">✅ All future updates free</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card fade-up">
+        <div class="course-thumb thumb-3">
+          <div class="thumb-bg thumb-3">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(255,107,53,0.5);"></div>
+              <div class="ring" style="border-color:rgba(255,107,53,0.3);"></div>
+              <div class="ring" style="border-color:rgba(255,107,53,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">📦</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">MODULE 03</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🟡 Intermediate</div>
+          <div class="course-title">Amazon FBA Dropshipping — Complete 2026 Guide</div>
+          <div class="course-desc">Use Amazon's 400M daily shoppers. Learn retail arbitrage, wholesale sourcing, listing creation, Amazon PPC ads, and scaling to $10K/month on Amazon.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 55 Videos</div>
+            <div class="meta-item"><span>⏱</span> 11 Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.87/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">Amazon Seller Central setup (screenshots)</div>
+            <div class="module-item">Finding profitable ASINs with AI tools</div>
+            <div class="module-item">Creating optimized Amazon listings</div>
+            <div class="module-item">Amazon PPC advertising strategy</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$179</div>
+              <div class="price-now">$12.99</div>
+              <div class="price-tag">✅ Lifetime access</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course-card fade-up">
+        <div class="course-thumb thumb-4">
+          <div class="thumb-bg thumb-4">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(0,212,170,0.5);"></div>
+              <div class="ring" style="border-color:rgba(0,212,170,0.3);"></div>
+              <div class="ring" style="border-color:rgba(0,212,170,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">📱</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">MODULE 04</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🟡 Intermediate</div>
+          <div class="course-title">TikTok Shop & Viral Video Ads Masterclass</div>
+          <div class="course-desc">TikTok Shop is the #1 fastest-growing dropshipping channel in 2026. Learn organic viral content, TikTok Shop setup, affiliate creators, and paid ads.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 48 Videos</div>
+            <div class="meta-item"><span>⏱</span> 9.5 Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.91/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">TikTok Shop seller account setup</div>
+            <div class="module-item">Creating viral product videos (template)</div>
+            <div class="module-item">TikTok affiliate program for free traffic</div>
+            <div class="module-item">Scaling with TikTok paid ads</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$159</div>
+              <div class="price-now">$11.99</div>
+              <div class="price-tag">✅ All 2026 updates</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="course-card fade-up">
+        <div class="course-thumb thumb-5">
+          <div class="thumb-bg thumb-5">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(255,211,42,0.5);"></div>
+              <div class="ring" style="border-color:rgba(255,211,42,0.3);"></div>
+              <div class="ring" style="border-color:rgba(255,211,42,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">🤖</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">MODULE 05</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🔴 Advanced</div>
+          <div class="course-title">AI-Powered Dropshipping — 2026 Edge</div>
+          <div class="course-desc">Use Claude, ChatGPT, Midjourney, and automation tools to find winning products, write ads, design stores, and run your business on near-autopilot.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 39 Videos</div>
+            <div class="meta-item"><span>⏱</span> 7.5 Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.93/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">AI product research (Minea + AI prompts)</div>
+            <div class="module-item">Auto-generating product descriptions</div>
+            <div class="module-item">AI ad creative generation workflow</div>
+            <div class="module-item">Full store automation setup</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$229</div>
+              <div class="price-now">$16.99</div>
+              <div class="price-tag">✅ Bonus AI toolkit</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="course-card featured fade-up">
+        <div class="course-badge">🏆 ALL-IN-ONE</div>
+        <div class="course-thumb thumb-6">
+          <div class="thumb-bg thumb-6">
+            <div class="thumb-rings">
+              <div class="ring" style="border-color:rgba(108,92,231,0.5);"></div>
+              <div class="ring" style="border-color:rgba(108,92,231,0.3);"></div>
+              <div class="ring" style="border-color:rgba(108,92,231,0.15);"></div>
+            </div>
+            <div class="thumb-icon-wrap">
+              <span class="thumb-icon">💎</span>
+              <div style="color:rgba(255,255,255,0.7); font-size:0.7rem; font-weight:600; margin-top:0.3rem; font-family:var(--font-mono);">COMPLETE BUNDLE</div>
+            </div>
+          </div>
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="course-body">
+          <div class="course-level">🏅 All Levels</div>
+          <div class="course-title">Complete Dropship Mastery Bundle — All 6 Courses</div>
+          <div class="course-desc">Every single course + 1-on-1 community support, weekly live Q&A sessions, private Discord, supplier black book, and all future courses FREE forever.</div>
+          <div class="course-meta">
+            <div class="meta-item"><span>🎬</span> 251 Videos</div>
+            <div class="meta-item"><span>⏱</span> 51+ Hours</div>
+            <div class="meta-item"><span>⭐</span> 4.97/5.0</div>
+          </div>
+          <div class="course-modules">
+            <div class="module-item">All 6 courses included — every module</div>
+            <div class="module-item">Live weekly Q&A with instructors</div>
+            <div class="module-item">Private Discord community (12K members)</div>
+            <div class="module-item">Verified supplier black book (200+ suppliers)</div>
+            <div class="module-item">Done-for-you ad templates & copy swipe file</div>
+          </div>
+          <div class="course-footer">
+            <div class="price-block">
+              <div class="price-orig">$999</div>
+              <div class="price-now">$29.99</div>
+              <div class="price-tag">🔥 Save 97% — Limited time</div>
+            </div>
+            <a href="#enroll" class="enroll-btn">Get Bundle</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="platforms" id="platforms">
+  <div class="section-inner">
+    <div class="section-tag">// Platforms We Cover</div>
+    <h2 class="section-title">Every Major Platform.<br>Full Walkthroughs.</h2>
+    <p class="section-sub">Real screen recordings with actual account screenshots. You'll see exactly how to set up, list, and manage products on every platform — no guessing, just follow along.</p>
+
+    <div class="platforms-grid">
+
+      <!-- Shopify -->
+      <div class="platform-card fade-up">
+        <div class="platform-logo pl-shopify">🛍️</div>
+        <div class="platform-name">Shopify</div>
+        <div class="platform-desc">The world's #1 dropshipping platform. Full walkthrough from store creation to first sale, including payment setup, product importing, and app stack.</div>
+
+        <!-- Mock Shopify Screenshot -->
+        <div class="shopify-mock">
+          <div class="sm-bar">
+            <div class="sm-dot"></div><div class="sm-dot"></div><div class="sm-dot"></div>
+          </div>
+          <div class="sm-body">
+            <div class="sm-header-row">
+              <span class="sm-store-name">🛒 MyDropStore 2026</span>
+              <div class="sm-nav-dots">
+                <div class="sm-nav-dot"></div>
+                <div class="sm-nav-dot"></div>
+                <div class="sm-nav-dot"></div>
+              </div>
+            </div>
+            <div class="sm-stats-row">
+              <div class="sm-stat"><div class="sm-stat-n">$8,240</div><div class="sm-stat-l">Sales</div></div>
+              <div class="sm-stat"><div class="sm-stat-n">142</div><div class="sm-stat-l">Orders</div></div>
+              <div class="sm-stat"><div class="sm-stat-n">38%</div><div class="sm-stat-l">Margin</div></div>
+            </div>
+            <div class="sm-order-list">
+              <div class="sm-order"><span class="sm-order-name">📱 Phone Stand Pro</span><span class="sm-order-price">+$19.40</span></div>
+              <div class="sm-order"><span class="sm-order-name">💡 LED Strip Kit</span><span class="sm-order-price">+$24.80</span></div>
+              <div class="sm-order"><span class="sm-order-name">🎮 Gaming Grip</span><span class="sm-order-price">+$16.20</span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="platform-features">
+          <li>Full store setup walkthrough</li>
+          <li>Importing from AliExpress & CJ</li>
+          <li>Payment gateway setup (Stripe/PayPal)</li>
+          <li>Converting theme installation</li>
+          <li>Automation with DSers/AutoDS</li>
+        </ul>
+      </div>
+
+      <!-- Amazon -->
+      <div class="platform-card fade-up">
+        <div class="platform-logo pl-amazon">📦</div>
+        <div class="platform-name">Amazon</div>
+        <div class="platform-desc">Tap into 400M+ daily active buyers. We cover Seller Central, listing creation, Buy Box strategy, product research, and Amazon PPC from scratch.</div>
+
+        <!-- Mock Amazon Screenshot -->
+        <div class="shopify-mock">
+          <div class="sm-bar" style="background:#131921;">
+            <div class="sm-dot"></div><div class="sm-dot"></div><div class="sm-dot"></div>
+          </div>
+          <div class="sm-body" style="background:#eaeded;">
+            <div class="sm-header-row" style="background:#232f3e;">
+              <span class="sm-store-name" style="color:#ff9900; font-size:0.65rem; font-weight:800;">amazon seller central</span>
+              <span style="color:#ff9900; font-size:0.7rem;">📊</span>
+            </div>
+            <div class="sm-stats-row">
+              <div class="sm-stat"><div class="sm-stat-n" style="color:#232f3e;">$11,892</div><div class="sm-stat-l">30-Day Sales</div></div>
+              <div class="sm-stat"><div class="sm-stat-n" style="color:#232f3e;">89</div><div class="sm-stat-l">Units Sold</div></div>
+              <div class="sm-stat"><div class="sm-stat-n" style="color:#232f3e;">4.7⭐</div><div class="sm-stat-l">Rating</div></div>
+            </div>
+            <div class="sm-order-list">
+              <div class="sm-order"><span class="sm-order-name" style="color:#333;">🏠 Home Organizer Set</span><span class="sm-order-price">+$28.50</span></div>
+              <div class="sm-order"><span class="sm-order-name" style="color:#333;">🧘 Yoga Mat Premium</span><span class="sm-order-price">+$35.20</span></div>
+              <div class="sm-order"><span class="sm-order-name" style="color:#333;">☕ Pour Over Kit</span><span class="sm-order-price">+$22.80</span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="platform-features">
+          <li>Seller Central account setup</li>
+          <li>Finding winning ASINs with AI</li>
+          <li>Listing optimization for search</li>
+          <li>Amazon PPC advertising</li>
+          <li>Reviews & Buy Box strategy</li>
+        </ul>
+      </div>
+
+      <!-- TikTok Shop -->
+      <div class="platform-card fade-up">
+        <div class="platform-logo pl-tiktok">🎵</div>
+        <div class="platform-name">TikTok Shop</div>
+        <div class="platform-desc">The explosive new channel. Products can go viral overnight with zero ad spend. We cover TikTok Shop setup, affiliate marketing, and organic viral growth.</div>
+
+        <!-- Mock TikTok Screenshot -->
+        <div class="shopify-mock">
+          <div class="sm-bar" style="background:#010101;">
+            <div class="sm-dot"></div><div class="sm-dot"></div><div class="sm-dot"></div>
+          </div>
+          <div class="sm-body" style="background:#1a1a1a;">
+            <div class="sm-header-row" style="background:#010101;">
+              <span class="sm-store-name" style="color:#ff0050; font-weight:800;">TikTok Shop Seller</span>
+              <span style="font-size:0.7rem;">🎵</span>
+            </div>
+            <div class="sm-stats-row">
+              <div class="sm-stat" style="background:#2a2a2a;"><div class="sm-stat-n" style="color:#ff0050;">2.4M</div><div class="sm-stat-l" style="color:#888;">Video Views</div></div>
+              <div class="sm-stat" style="background:#2a2a2a;"><div class="sm-stat-n" style="color:#ff0050;">847</div><div class="sm-stat-l" style="color:#888;">Orders</div></div>
+              <div class="sm-stat" style="background:#2a2a2a;"><div class="sm-stat-n" style="color:#ff0050;">$6.2K</div><div class="sm-stat-l" style="color:#888;">Revenue</div></div>
+            </div>
+            <div class="sm-order-list">
+              <div class="sm-order" style="background:#2a2a2a;"><span class="sm-order-name" style="color:#eee;">💄 Lip Liner Set</span><span class="sm-order-price" style="color:#ff0050;">+$14.20</span></div>
+              <div class="sm-order" style="background:#2a2a2a;"><span class="sm-order-name" style="color:#eee;">🪄 Hair Curler Pro</span><span class="sm-order-price" style="color:#ff0050;">+$32.80</span></div>
+              <div class="sm-order" style="background:#2a2a2a;"><span class="sm-order-name" style="color:#eee;">🧴 Glow Serum</span><span class="sm-order-price" style="color:#ff0050;">+$19.60</span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="platform-features">
+          <li>TikTok Shop seller setup</li>
+          <li>Viral product video templates</li>
+          <li>Creator affiliate program</li>
+          <li>Organic to paid ad strategy</li>
+          <li>Trending product research</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO START -->
+<section id="start">
+  <div class="section-inner">
+    <div class="section-tag">// Your Roadmap</div>
+    <h2 class="section-title" style="text-align:center;">From Zero to First Sale<br>in 5 Steps</h2>
+    <p class="section-sub" style="text-align:center; margin: 0 auto 4rem;">Every step is a dedicated video module with animated walkthroughs and real account examples. Follow the sequence and you will make sales.</p>
+
+    <div class="steps-grid">
+      <div class="step-card fade-up">
+        <div class="step-num"><div class="step-icon">🎯</div></div>
+        <div class="step-title">Pick Your Niche</div>
+        <div class="step-desc">Use our AI-powered niche validator to find low-competition, high-demand markets with 40%+ margins in 2026.</div>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num"><div class="step-icon">🔍</div></div>
+        <div class="step-title">Find Winning Products</div>
+        <div class="step-desc">Product research with Minea, TikTok Creative Center, and ChatGPT. We show our exact workflow to find $10K/month products.</div>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num"><div class="step-icon">🏗️</div></div>
+        <div class="step-title">Build Your Store</div>
+        <div class="step-desc">Follow our live Shopify setup recording. Copy our converting store structure, install the right apps, and go live in 48 hours.</div>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num"><div class="step-icon">📣</div></div>
+        <div class="step-title">Drive Traffic</div>
+        <div class="step-desc">TikTok organic, Facebook/Instagram ads, Google Shopping, or influencer seeding — we have a full course for each channel.</div>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num"><div class="step-icon">📈</div></div>
+        <div class="step-title">Scale & Automate</div>
+        <div class="step-desc">Kill losers fast, scale winners hard. Use AutoDS and AI to automate fulfillment and customer service while you scale past $10K/month.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT RESEARCH -->
+<section style="background:var(--deep); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="research-grid">
+      <!-- Product card stack -->
+      <div>
+        <div class="product-card-stack">
+          <!-- Card 3 (back) -->
+          <div class="product-card" style="border-color:rgba(108,92,231,0.1);">
+            <div class="pc-header">
+              <div class="pc-title">Magnetic Phone Holder</div>
+              <div class="pc-badge">📦 Testing</div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="product-card" style="border-color:rgba(108,92,231,0.2);">
+            <div class="pc-header">
+              <div class="pc-title">Portable Blender Pro</div>
+              <div class="pc-badge">🟡 Scaling</div>
+            </div>
+          </div>
+
+          <!-- Card 1 (front) -->
+          <div class="product-card">
+            <div class="pc-header">
+              <div class="pc-title">🏆 Smart LED Desk Lamp</div>
+              <div class="pc-badge">🔥 Winning</div>
+            </div>
+            <div class="pc-metrics">
+              <div class="pcm">
+                <div class="pcm-val">$47</div>
+                <div class="pcm-label">Sell Price</div>
+              </div>
+              <div class="pcm">
+                <div class="pcm-val">$8.40</div>
+                <div class="pcm-label">COGS (CJ)</div>
+              </div>
+              <div class="pcm">
+                <div class="pcm-val">82%</div>
+                <div class="pcm-label">Gross Margin</div>
+              </div>
+            </div>
+
+            <!-- Trend chart (SVG) -->
+            <div class="trend-chart">
+              <svg viewBox="0 0 300 60" style="width:100%;height:100%;">
+                <defs>
+                  <linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,55 L30,50 L60,45 L90,40 L120,30 L150,25 L180,20 L210,15 L240,10 L270,8 L300,5 L300,60 L0,60Z" fill="url(#trendGrad)"/>
+                <path d="M0,55 L30,50 L60,45 L90,40 L120,30 L150,25 L180,20 L210,15 L240,10 L270,8 L300,5" fill="none" stroke="#6c5ce7" stroke-width="2"/>
+              </svg>
+            </div>
+
+            <div class="pc-suppliers">
+              <div class="supplier-row">
+                <span class="supplier-name">CJ Dropshipping</span>
+                <span class="supplier-price">$8.40</span>
+                <span class="supplier-ship">7-12 days US</span>
+              </div>
+              <div class="supplier-row">
+                <span class="supplier-name">AliExpress (A+)</span>
+                <span class="supplier-price">$9.20</span>
+                <span class="supplier-ship">10-15 days US</span>
+              </div>
+              <div class="supplier-row">
+                <span class="supplier-name">Zendrop US</span>
+                <span class="supplier-price">$11.80</span>
+                <span class="supplier-ship">3-5 days US ⚡</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools list -->
+      <div>
+        <div class="section-tag">// Product Research</div>
+        <h2 class="section-title">Find Products That<br>Actually Sell</h2>
+        <p class="section-sub">We teach the full 2026 research stack. Know which products are trending before they peak, and find suppliers with the best margins.</p>
+
+        <div class="tool-list">
+          <div class="tool-item fade-up">
+            <div class="tool-emoji">🔥</div>
+            <div>
+              <div class="tool-name">Minea</div>
+              <div class="tool-use">Spy on winning Facebook, TikTok & Pinterest ads — find products already making money</div>
+            </div>
+            <div class="tool-tag tag-paid">Paid</div>
+          </div>
+          <div class="tool-item fade-up">
+            <div class="tool-emoji">📊</div>
+            <div>
+              <div class="tool-name">Google Trends</div>
+              <div class="tool-use">Validate demand over time, find seasonal opportunities and rising niches</div>
+            </div>
+            <div class="tool-tag tag-free">Free</div>
+          </div>
+          <div class="tool-item fade-up">
+            <div class="tool-emoji">🎵</div>
+            <div>
+              <div class="tool-name">TikTok Creative Center</div>
+              <div class="tool-use">See top-performing product videos and trending sounds — built-in spy tool from TikTok</div>
+            </div>
+            <div class="tool-tag tag-free">Free</div>
+          </div>
+          <div class="tool-item fade-up">
+            <div class="tool-emoji">🤖</div>
+            <div>
+              <div class="tool-name">ChatGPT + Claude AI</div>
+              <div class="tool-use">Generate product ideas, write optimized descriptions, create ad hooks in seconds</div>
+            </div>
+            <div class="tool-tag tag-free">Free</div>
+          </div>
+          <div class="tool-item fade-up">
+            <div class="tool-emoji">📦</div>
+            <div>
+              <div class="tool-name">AutoDS Product Finder</div>
+              <div class="tool-use">AI-powered winning product finder with profit calculator and supplier comparison</div>
+            </div>
+            <div class="tool-tag tag-paid">Paid</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="calc-section" id="calculator">
+  <div class="section-inner">
+    <div class="section-tag" style="text-align:center;">// Earnings Calculator</div>
+    <h2 class="section-title" style="text-align:center;">How Much Can You Earn?</h2>
+    <p class="section-sub" style="text-align:center; margin: 0 auto 4rem;">Adjust the sliders to see realistic monthly earnings based on your traffic and conversion rates.</p>
+
+    <div class="calc-grid">
+      <div class="calc-box">
+        <div class="calc-title">🧮 Profit Calculator</div>
+
+        <div class="calc-row">
+          <div class="calc-label">Daily Visitors <span class="calc-val" id="visitorsVal">500</span></div>
+          <input type="range" class="calc-slider" min="50" max="5000" value="500" id="visitors" oninput="calcEarnings()">
+        </div>
+
+        <div class="calc-row">
+          <div class="calc-label">Conversion Rate <span class="calc-val" id="convVal">2%</span></div>
+          <input type="range" class="calc-slider" min="1" max="5" value="2" step="0.1" id="conv" oninput="calcEarnings()">
+        </div>
+
+        <div class="calc-row">
+          <div class="calc-label">Average Order Value <span class="calc-val" id="aovVal">$45</span></div>
+          <input type="range" class="calc-slider" min="20" max="200" value="45" id="aov" oninput="calcEarnings()">
+        </div>
+
+        <div class="calc-row">
+          <div class="calc-label">Gross Profit Margin <span class="calc-val" id="marginVal">35%</span></div>
+          <input type="range" class="calc-slider" min="20" max="70" value="35" id="margin" oninput="calcEarnings()">
+        </div>
+
+        <div class="calc-result">
+          <div class="result-label">Estimated Monthly Profit</div>
+          <div class="result-amount" id="resultAmount">$9,450</div>
+          <div class="result-period">After product costs (excl. ad spend)</div>
+        </div>
+      </div>
+
+      <div class="calc-insights">
+        <div class="insight-item">
+          <div class="ii-icon">🎯</div>
+          <div>
+            <div class="ii-title">Realistic Beginner Earnings</div>
+            <div class="ii-desc">Most students make their first sale within 2 weeks. Consistent beginners hit $1K–$3K/month within 60–90 days of launching with our system.</div>
+          </div>
+        </div>
+        <div class="insight-item">
+          <div class="ii-icon">📈</div>
+          <div>
+            <div class="ii-title">Intermediate (3–6 Months)</div>
+            <div class="ii-desc">With 1–2 winning products and a functioning ad system, hitting $5K–$15K/month is the norm. Our students regularly share results in our Discord.</div>
+          </div>
+        </div>
+        <div class="insight-item">
+          <div class="ii-icon">🚀</div>
+          <div>
+            <div class="ii-title">Advanced (6–12 Months)</div>
+            <div class="ii-desc">Students who master scaling and brand building consistently reach $30K–$100K+/month. Several have sold their stores for 6-figure exits.</div>
+          </div>
+        </div>
+        <div class="insight-item">
+          <div class="ii-icon">⚠️</div>
+          <div>
+            <div class="ii-title">Honest Disclaimer</div>
+            <div class="ii-desc">Results depend on effort, capital, and execution. Dropshipping is a real business — it takes work. Our job is to give you the shortest, fastest, least-expensive path to success.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="section-inner">
+    <div class="section-tag">// Student Results</div>
+    <h2 class="section-title">Real Students.<br>Real Numbers.</h2>
+    <p class="section-sub">These are verified students who enrolled in our courses and documented their journey publicly. Average results vary — these are highlights.</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"I was a complete beginner with $200 and a laptop. After the Shopify module I had my store up in 3 days. By week 6 I was making $2,400/month. This course changed everything for me."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe); color:white;">A</div>
+          <div>
+            <div class="author-name">Ahmed R.</div>
+            <div class="author-meta">UAE · Shopify Store</div>
+            <div class="author-earning">📈 Now earning $4,200/month</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"The Amazon module alone was worth 10x the price. The real Seller Central screenshots made it SO easy to follow. Hit $8K revenue in my second month on Amazon."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#00d4aa,#0099cc); color:white;">S</div>
+          <div>
+            <div class="author-name">Sarah M.</div>
+            <div class="author-meta">UK · Amazon Dropshipper</div>
+            <div class="author-earning">📈 Now earning $11,800/month</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"The TikTok Shop module is unreal. I followed the viral video template, posted 3 videos, and one went to 800K views. That single video made me $3,200 in one week."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#ff6b35,#ffd32a); color:white;">K</div>
+          <div>
+            <div class="author-name">Kevin T.</div>
+            <div class="author-meta">US · TikTok Shop</div>
+            <div class="author-earning">📈 Now earning $7,500/month</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"I tried other courses at $2,000 each and learned less than I did here for $29. The 3D animated explanations make complex things like ROAS, CPM, and CPA actually click in your brain."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#fd79a8,#e84393); color:white;">P</div>
+          <div>
+            <div class="author-name">Priya N.</div>
+            <div class="author-meta">India · Shopify + Ads</div>
+            <div class="author-earning">📈 Now earning $5,600/month</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"The AI module alone is worth 100x the price. I now write all my ads with ChatGPT, do product research with AI, and I automated 90% of my store with AutoDS. Working 2 hours a day."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7); color:white;">M</div>
+          <div>
+            <div class="author-name">Marcus D.</div>
+            <div class="author-meta">Germany · AI Dropshipping</div>
+            <div class="author-earning">📈 Now earning $19,200/month</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"I'm a 19-year-old student. This is the first course I've taken that doesn't feel like a scam. Real screenshots, real numbers, real supplier contacts. Made $780 in my first month part-time."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#00b894,#00d4aa); color:white;">J</div>
+          <div>
+            <div class="author-name">Jess L.</div>
+            <div class="author-meta">Australia · Student</div>
+            <div class="author-earning">📈 First month: $780 profit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--deep); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-tag" style="text-align:center;">// FAQ</div>
+    <h2 class="section-title" style="text-align:center; margin-bottom:0.75rem;">Questions Answered</h2>
+    <p class="section-sub" style="text-align:center; margin: 0 auto 3.5rem;">Everything you need to know before enrolling.</p>
+
+    <div class="faq-list" id="faq">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How much money do I need to start dropshipping? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">You can realistically start with $0–$100 using organic traffic methods (TikTok, Instagram Reels, SEO). For paid advertising, we recommend having $300–$500 to test products. Our course teaches both approaches so you can start at whatever level you're at right now.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is dropshipping still profitable in 2026? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">Absolutely. Global e-commerce surpassed $7.4 trillion in 2025 and continues growing. TikTok Shop created an entirely new channel. AI tools have made product research and ad creation cheaper than ever. Dropshipping is more accessible in 2026 than it's ever been — the only thing that's changed is the tools and platforms, which is exactly what this course covers.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Do I need any technical experience? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">None at all. Every lesson starts from absolute zero. We use screen recordings of real accounts so you can pause, rewind, and follow along exactly. If you can use a smartphone and a web browser, you can do this.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">What makes this different from other dropshipping courses? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">Three things: (1) We use 3D and animated video explanations that make complex concepts like profit margins, ad funnels, and supply chains visually clear. (2) We show real account screenshots from Shopify, Amazon, and TikTok Shop — not slides or theory. (3) We charge under $30 for everything because we believe access to this knowledge shouldn't cost $2,000.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How long do I get access to the courses? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">Lifetime access with all future updates. When platforms change (they always do), we update the content and you get the new lessons at no extra cost. This is a one-time purchase.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is there a money-back guarantee? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">Yes. 30-day no-questions-asked refund. If you go through the first two modules and don't feel the course is worth it, email us and we'll refund you instantly. We've had a 98% satisfaction rate and less than 0.4% refund rate across 47,000 students.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Can I dropship to any country? <div class="faq-arrow">▼</div></div>
+        <div class="faq-a">Yes. We cover how to sell to the US, UK, Canada, Australia, and Europe. The fundamentals work globally, and we have dedicated lessons on adapting your strategy for each major market including VAT, import duties, and shipping times.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="enroll">
+  <div class="cta-inner">
+    <div class="section-tag" style="text-align:center; margin-bottom:1rem;">// Limited Time Offer</div>
+    <h2 class="section-title" style="margin-bottom:0.75rem;">Start Your Dropshipping<br>Business Today</h2>
+    <p class="section-sub" style="text-align:center; margin: 0 auto 2rem;">No experience needed. No warehouse. No huge investment. Just follow the videos and take action.</p>
+
+    <div class="cta-price-display">
+      <div class="cta-orig">$999</div>
+      <div class="cta-now">$29.99</div>
+      <div class="cta-tag">
+        <div class="cta-save">🔥 You save $969 (97% OFF)</div>
+        <div class="cta-access">All 6 courses + community + lifetime updates</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:1.5rem;">
+      <a href="#" class="btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem; margin-bottom:1rem; display:inline-flex;">
+        🚀 Enroll in Complete Bundle — $29.99
+      </a>
+    </div>
+
+    <div class="cta-guarantee">
+      🔒 30-Day Money-Back Guarantee &nbsp;·&nbsp; ✅ Instant Access &nbsp;·&nbsp; 🎓 Lifetime Updates
+    </div>
+
+    <div style="margin-top:2rem; display:flex; align-items:center; justify-content:center; gap:2rem; flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--neon);">47K+</div>
+        <div style="font-size:0.75rem; color:var(--muted);">Students Enrolled</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--gold);">4.9/5.0</div>
+        <div style="font-size:0.75rem; color:var(--muted);">Average Rating</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--accent);">251</div>
+        <div style="font-size:0.75rem; color:var(--muted);">Video Lessons</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--fire);">51+</div>
+        <div style="font-size:0.75rem; color:var(--muted);">Hours of Content</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">DropShip✦Mastery</div>
+        <div class="footer-desc">The world's most complete, affordable, and up-to-date dropshipping education platform. 47,000+ students. 2026 updated content. Lifetime access.</div>
+        <div class="footer-social">
+          <a class="social-btn" href="#">🎵</a>
+          <a class="social-btn" href="#">📸</a>
+          <a class="social-btn" href="#">▶</a>
+          <a class="social-btn" href="#">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Courses</div>
+        <ul class="footer-links">
+          <li><a href="#">Foundation Course</a></li>
+          <li><a href="#">Shopify Mastery</a></li>
+          <li><a href="#">Amazon FBA</a></li>
+          <li><a href="#">TikTok Shop</a></li>
+          <li><a href="#">AI Dropshipping</a></li>
+          <li><a href="#">Complete Bundle</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="#">Free Niche List 2026</a></li>
+          <li><a href="#">Supplier Black Book</a></li>
+          <li><a href="#">Ad Templates</a></li>
+          <li><a href="#">Community Discord</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">YouTube Channel</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Contact Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 DropShip Mastery. All rights reserved. Results are not guaranteed. Individual outcomes vary.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Earnings calculator
+  function calcEarnings() {
+    const visitors = +document.getElementById('visitors').value;
+    const conv = +document.getElementById('conv').value / 100;
+    const aov = +document.getElementById('aov').value;
+    const margin = +document.getElementById('margin').value / 100;
+
+    const dailyOrders = visitors * conv;
+    const dailyRevenue = dailyOrders * aov;
+    const dailyProfit = dailyRevenue * margin;
+    const monthlyProfit = dailyProfit * 30;
+
+    document.getElementById('visitorsVal').textContent = visitors.toLocaleString();
+    document.getElementById('convVal').textContent = (+document.getElementById('conv').value).toFixed(1) + '%';
+    document.getElementById('aovVal').textContent = '$' + aov;
+    document.getElementById('marginVal').textContent = document.getElementById('margin').value + '%';
+
+    document.getElementById('resultAmount').textContent = '$' + Math.round(monthlyProfit).toLocaleString();
+  }
+
+  // FAQ toggle
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 100 * (Array.from(entry.target.parentElement?.children || []).indexOf(entry.target)));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Mobile menu toggle
+function toggleMobileMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const nav = document.querySelector('nav');
+  navLinks.classList.toggle('mobile-open');
+  nav.classList.toggle('nav-mobile-open');
+}
+
+// Init calculator
+  calcEarnings();
+</script>
+</body>
+</html>
